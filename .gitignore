@@ -1,0 +1,6 @@
+node_modules
+.stylelintrc.js
+package-lock.json
+package.json
+tailwind-linter.js
+.\dist\index1.html
