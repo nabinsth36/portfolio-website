@@ -1,125 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/style.css" />
-    <title>Web Developers Portfolio</title>
+    <title>Frontend Mentor | QR code component</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="./images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Outfit:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-slate-700">
-    <!-- navbar goes here -->
-    <nav
-      class="w-full h-14 flex justify-between px-4 items-center md:px-4 fixed"
-    >
-      <div>
-        <div class="w-20 pt-20">
-          <img src="./dist/images/4x/logo_white.png" alt="" />
-        </div>
-      </div>
-      <ul class="text-slate-50 md:flex hidden font-semibold">
-        <li class="mx-[10px] cursor-pointer">Home</li>
-        <li class="mx-[10px] cursor-pointer">About Me</li>
-        <li class="mx-[10px] cursor-pointer">Contact Me</li>
-      </ul>
-      <div
-        class="hidden md:block px-2 py-2 bg-indigo-700 text-white rounded font-bold cursor-pointer"
+  <body
+    class="sm:w-[1440px] w-[375px] bg-slate-300 flex justify-center flex-col items-center min-h-screen max-w-full"
+  >
+    <main>
+      <h1 class="hidden">QR Card Component Example</h1>
+      <section
+        class="sm:w-[320px] sm:h-[464px] bg-white rounded-3xl shadow-lg flex flex-col text-center items-center pt-[9px] pl-[9px] pr-[9px]"
       >
-        Login/Signup
-      </div>
-      <div class="md:hidden">
-        <a class="text-4xl" href="#">&#8801;</a>
-      </div>
-    </nav>
-    <!-- navbar ends here -->
-
-    <!-- header section starts -->
-    <header class="w-full h-auto">
-      <div class="md:flex bg-slate-950">
-        <div>
-          <div class="flex flex-col m-5 md:m-20">
-            <div class="pb-5 flex flex-col items-center md:hidden">
-              <img
-                class="w-[120px] h-[120px]"
-                src="./dist/images/nabin_small.png"
-                alt=""
-              />
-            </div>
-            <div class="text-white font-thin text-3xl">
-              Hello and Namaste from <span class="uppercase">Nepal</span>!
-            </div>
-            <p class="text-white font-thin text-3xl md:text-5xl">
-              I am
-              <p
-                class="uppercase text-orange-400 font-serif text-4xl sm:text-5xl md:text-6xl mt-6 mb-6"
-              >
-                Nabin Shrestha
-              </p>
-            </p>
-          </div>
-        </div>
-        <div class="hidden md:block">
-          <img class="w-[325px]" src="./dist/images/nabin_big.png" alt="" />
-        </div>
-        <div class="text-lg md:m-20 md:text-2xl">
-          <p class="text-white">
-            I'm a passionate web developer dedicated to crafting immersive
-            digital experiences.
-          </p>
-          <p class="text-orange-200 mt-8">
-            Explore my work below or get in touch to discuss your project.
-          </p>
-
-          <div class="mt-10">
-            <button
-              class="bg-slate-600 text-white mt-8 mr-4 px-3 py-1 text-xl rounded-lg"
-            >
-              My Work
-            </button>
-            <button
-              class="bg-orange-700 text-white mt-8 mr-4 px-3 py-1 text-xl rounded-lg"
-            >
-              Contact Me
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- header section ends here -->
-
-    <!-- my work section starts here -->
-    <div
-      class="bg-slate-600 h-auto w-100 flex flex-wrap flex-col items-center p-10"
-    >
-      <div class="w-full h-auto flex flex-wrap flex-col items-center">
-        <p class="text-blue-500 font-bold text-3xl md:text-4xl text-center">
-          About Me
-        </p>
         <div
-          class="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"
-        ></div>
-      </div>
+          class="sm:w-[302px] sm:h-[302px] rounded-2xl bg-cover overflow-clip mb-4"
+        >
+          <img
+            src="\qr-code-component-main\qr-code-component-main\images\image-qr-code.png"
+            alt="QR Code to FrontEndMentor.io"
+          />
+        </div>
 
-      <div class="w-full flex flex-col text-left p-8">
-        <div class="flex justify-center align-middle">
-          <img class="w-20 h-20" src="./dist/images/html logo.png" alt="" />
-          <img class="w-20 h-20" src="./dist/images/css logo.png" alt="" />
-          <img class="w-20 h-20" src="./dist/images/js logo.png" alt="" />
-        </div>
-        <div class="w-64">
-          <p class="text-white">
-            As a web developer, I specialize in designing, building, and
-            maintaining websites and web applications. My skills include
-            proficiency in HTML, CSS, and JavaScript for frontend development,
-            as well as experience with frameworks like React.js and backend
-            technologies such as Node.js and PHP. I'm adept at database
-            management using MySQL, MongoDB, and PostgreSQL and prioritize
-            responsive design and accessibility. Proficient in Git for version
-            control and deployment tools like Docker and Jenkins, I deliver
-            high-quality, scalable solutions tailored to client needs.
-          </p>
-        </div>
-      </div>
-    </div>
+        <h2 class="text-slate-900 font-bold mb-4 font-[outfit] text-xl">
+          Improve your front-end skills by building projects
+        </h2>
+        <p class="text-slate-500 font-[outfit]">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </section>
+    </main>
+    <footer class="font-extralight mt-4 text-xs">
+      This is a solution to the
+      <a
+        class="font-semibold"
+        href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H?ref=challenge"
+        target="_blank"
+        title="opens in a new tab"
+        >QR Component Challenge</a
+      >
+      by Frontend Mentor. Coded by
+      <a
+        class="font-semibold"
+        href="https://www.frontendmentor.io/profile/nabinsth36"
+        target="_blank"
+        title="opens in a new tab"
+        >Nabin Shrestha</a
+      >.
+    </footer>
   </body>
 </html>
